@@ -1,6 +1,7 @@
 import pytest
 
 from Invoice import Invoice
+from unittest.mock import patch
 
 
 @pytest.fixture()
@@ -14,6 +15,11 @@ def invoice():
     invoice = Invoice()
     return invoice
 
+@pytest.fixture()
+def input_value():
+    userInput = 'y'
+    return userInput
+
 def test_CanCalculateTotalImpurePrice(products):
     invoice = Invoice()
     invoice.totalImpurePrice(products)
@@ -26,3 +32,19 @@ def test_CanCalculateTotalDiscount(invoice, products):
 def test_CanCalculateTotalPurePrice(invoice, products):
     invoice.totalPurePrice(products)
     assert invoice.totalPurePrice(products) == 69.38
+    
+def test_addProduct(invoice, products):
+    invoice.addProduct(products,'price', 'discount')
+    assert invoice.addProduct(products,'price','discount')
+# this test case helps make sure that products are being added using the #add product method. price and discount are positional argument that
+# are needed for the test case.
+
+#This line creates input to be assigned as 'y' automatically, as opposed to needing user input manually.
+# We chose to add this test case to make sure that inputs received were correct.
+@patch('builtins.input', return_value='y')
+def test_inputAnswer(input_value):
+    invoice = Invoice
+    # Assert that inputAnswer is called with our coded input above, and returns equal to 'y', if it does, return true
+    assert invoice.inputAnswer(Invoice, input_value) == 'y'
+
+
