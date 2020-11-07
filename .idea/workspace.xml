@@ -13,13 +13,24 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:myorigin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="673118a6-b9fa-4376-a48a-3226ad23c238" name="Default Changelist" comment="&#10;Added 2 new test cases." />
+    <list default="true" id="673118a6-b9fa-4376-a48a-3226ad23c238" name="Default Changelist" comment="fixed the merge" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604762282910</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed the merge">
+      <created>1604779672322</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604779672322</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -66,19 +84,22 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&#10;Added 2 new test cases." />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;Added 2 new test cases." />
+    <MESSAGE value="fixed the merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed the merge" />
   </component>
   <component name="WindowStateProjectService">
     <state x="736" y="284" key="FileChooserDialogImpl" timestamp="1604762225139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="736" y="284" key="FileChooserDialogImpl/-1920.-1.1920.1040/0.0.1920.1040/554.-768.1360.728@0.0.1920.1040" timestamp="1604762225139" />
-    <state x="548" y="262" key="Vcs.Push.Dialog.v2" timestamp="1604762287051">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="457" y="217" key="Vcs.Push.Dialog.v2" timestamp="1604779682498">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="548" y="262" key="Vcs.Push.Dialog.v2/-1920.-1.1920.1040/0.0.1920.1040/554.-768.1360.728@0.0.1920.1040" timestamp="1604762287051" />
+    <state x="457" y="217" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1604779682498" />
   </component>
 </project>
