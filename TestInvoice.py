@@ -1,3 +1,5 @@
+from unittest.mock import patch
+
 import pytest
 from invoice import Invoice
 
@@ -37,9 +39,11 @@ def test_CanCalculateTotalPurePrice(invoice, products):
     assert invoice.totalPurePrice(products) == 69.38
 
 
-# Test that the program is adding products correctly
+
+    #this test case helps make sure that products are being added using the
+    #add product method. price and discount are positional argument that are needed for the test case.
 def test_addProduct(invoice, products):
- rmitchbryant
+
     invoice.addProduct(products, 'price', 'discount')
     assert invoice.addProduct(products, 'price', 'discount')
 
@@ -49,8 +53,6 @@ def test_addProduct(invoice, products):
 def test_inputAnswer(input_value):
     invoice = Invoice
     assert invoice.inputAnswer(Invoice, input_value) == 'y'
-    invoice.addProduct(products,'price', 'discount')
-    assert invoice.addProduct(products,'price','discount')
-    #this test case helps make sure that products are being added using the
-    #add product method. price and discount are positional argument that are needed for the test case.
- master
+
+
+
