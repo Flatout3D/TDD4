@@ -27,3 +27,5 @@ def test_CanCalculateTotalPurePrice(invoice, products):
 def test_addProduct(invoice, products):
     invoice.addProduct(products,'price', 'discount')
     assert invoice.addProduct(products,'price','discount')
+    #this test case helps make sure that products are being added using the
+    #add product method. price and discount are positional argument that are needed for the test case.
